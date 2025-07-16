@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octa: broker terkemuka untuk trading online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Geographical Confirmation Modal -->
+    <div id="geo-modal" class="modal-overlay" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+        <div class="modal-content">
+            <h2 id="modal-title">Mengonfirmasi Anda bukan dari AS atau Filipina</h2>
+            <div id="modal-description">
+                <p>Dengan memberikan pernyataan ini, saya secara tegas menyatakan dan mengonfirmasikan bahwa:</p>
+                <ul>
+                    <li>Saya bukan warga negara atau penduduk AS</li>
+                    <li>Saya bukan penduduk Filipina</li>
+                    <li>Saya, secara langsung maupun tidak langsung, tidak memiliki lebih dari 10% saham/hak suara/kepentingan dari penduduk AS dan/atau tidak mengontrol warga negara atau penduduk AS dengan cara lain</li>
+                    <li>Saya tidak berada di bawah kepemilikan langsung atau tidak langsung untuk lebih dari 10% saham/hak suara/kepentingan dan/atau berada di bawah kontrol warga negara atau penduduk AS dengan cara lain</li>
+                    <li>Saya tidak berafiliasi dengan warga negara atau penduduk AS dalam hal Bagian 1504(a) dari FATCA</li>
+                    <li>Saya menyadari tanggung jawab saya jika membuat pernyataan palsu.</li>
+                </ul>
+                <p>Untuk tujuan pernyataan ini, semua negara dan wilayah dependen AS disamakan dengan wilayah utama AS. Saya berkomitmen untuk membela dan membebaskan Octa Markets Incorporated, direktur dan pejabatnya dari klaim apa pun yang timbul akibat atau terkait dengan pelanggaran apa pun atas pernyataan saya.</p>
+                <p class="privacy-notice">Kami berkomitmen menjaga privasi dan keamanan informasi pribadi Anda. Kami hanya mengumpulkan email untuk menyediakan penawaran khusus dan informasi penting tentang produk dan layanan kami. Dengan memberikan alamat email, Anda setuju untuk menerima surat tersebut dari kami. Jika Anda ingin berhenti berlangganan atau memiliki pertanyaan maupun permasalahan, silakan hubungi Layanan Pelanggan kami.</p>
+            </div>
+            <div class="modal-buttons">
+                <button id="cancel-btn" class="btn-secondary">Batalkan Konfirmasi</button>
+                <button id="confirm-btn" class="btn-primary">Konfirmasi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="https://octacdn.net/assets/img/mobile_adv/app_logo.svg?ee325ec64f6399f38280b0de1025a0fba58e8d8d" alt="Octa Logo" class="logo-img">
+                    </div>
+                    <nav class="nav">
+                        <a href="#" class="nav-link">Trading</a>
+                        <a href="#" class="nav-link">Platform</a>
+                        <a href="#" class="nav-link">Edukasi</a>
+                        <a href="#" class="nav-link">Perusahaan</a>
+                        <a href="https://my.octabroker.com/signup/" class="btn-cta">Buka akun</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Trade dengan broker global untuk meraih target investasi Anda.</h1>
+                    <div class="app-info">
+                        <img src="https://octacdn.net/assets/img/mobile_adv/app_logo.svg?ee325ec64f6399f38280b0de1025a0fba58e8d8d" alt="Octa App Logo" class="app-logo">
+                        <div class="app-details">
+                            <h3>Aplikasi The Octa Trading</h3>
+                            <div class="ratings">
+                                <span class="rating">4,2</span>
+                                <span class="rating">4,6</span>
+                            </div>
+                            <div class="app-buttons">
+                                <a href="https://octa-website.onelink.me/tdVk/5j6csa5a?af_js_web=true&af_ss_ver=2_2_0&pid=w2a&af_sub1=0&af_sub2=0&af_sub3=0&af_sub5=0&af_ss_ui=true&af_sub4=0b00c66a-5da8-4c4b-844d-156ca403a32d" class="app-btn">
+                                    <img src="https://octacdn.net/assets/img/mobile_adv/g_play_button.svg?17cd6d17f26d10c2b90021155574db19be09145c" alt="Google Play" class="store-btn">
+                                </a>
+                                <a href="#" class="app-btn">
+                                    <img src="https://octacdn.net/assets/img/mobile_adv/app_store_button.svg?99eeb7b6d4da4b4526193fd9d95546cb78b8570f" alt="App Store" class="store-btn">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trading Section -->
+        <section class="trading-section">
+            <div class="container">
+                <div class="trading-content">
+                    <div class="trading-text">
+                        <h2>Trading dengan broker global</h2>
+                        <p>Pilih dari 300+ aset, termasuk saham, komoditas, dan indeks.</p>
+                        <a href="https://my.octabroker.com/signup/" class="btn-primary">Buka akun</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safe Investment Section -->
+        <section class="safe-section">
+            <div class="container">
+                <h2>Tempat aman untuk investasi</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Ketentuan trading transparan</h3>
+                        <ul>
+                            <li>Swap 0%</li>
+                            <li>Tanpa komisi</li>
+                            <li>Deposit dan penarikan aman melalui metode pembayaran pilihan Anda</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>Ide trading setiap hari</h3>
+                        <ul>
+                            <li>Dapatkan tips berharga untuk trading yang lebih sukses dalam platform trading kami.</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>Materi edukasi gratis</h3>
+                        <ul>
+                            <li>Tonton kursus kami mengenai aspek-aspek dasar trading.</li>
+                            <li>Hadiri webinar rutin dan sesi live trading untuk pemula dan profesional.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="preview-images">
+                    <img src="https://octacdn.net/assets/img/main-page-redesign/safe-preview1.png?26e5423464d1d090347286d3fd59b0c00953efbb" alt="Trading Preview 1" class="preview-img">
+                    <img src="https://octacdn.net/assets/img/main-page-redesign/safe-preview2.png?e24be4f2f91a9f0a27eb9a6f679e6f07a8388230" alt="Trading Preview 2" class="preview-img">
+                    <img src="https://octacdn.net/assets/img/main-page-redesign/safe-preview3.png?d08ff52cbc33236d34528d19baafe0e62601323d" alt="Trading Preview 3" class="preview-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section class="awards-section">
+            <div class="container">
+                <h2>Trading dengan Broker Global Terbaik Asia 2022</h2>
+                <div class="awards-grid">
+                    <div class="award-item">
+                        <div class="award-number">100+</div>
+                        <div class="award-text">penghargaan</div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-number">12</div>
+                        <div class="award-text">tahun di pasar</div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-number">180+</div>
+                        <div class="award-text">negara wilayah operasional</div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-number">40J+</div>
+                        <div class="award-text">akun dibuka</div>
+                    </div>
+                </div>
+                <div class="awards-buttons">
+                    <a href="https://my.octabroker.com/open-account" class="btn-primary">Ayo bergabung</a>
+                    <a href="/company/reviews/" class="btn-secondary">Lihat ulasan lainnya</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Section -->
+        <section class="investment-section">
+            <div class="container">
+                <h2>Biarkan investasi bekerja untuk Anda</h2>
+                <p>Kami senantiasa berupaya meningkatkan produk untuk memaksimalkan trading Anda.</p>
+                <div class="investment-features">
+                    <div class="investment-grid">
+                        <div class="investment-item">
+                            <div class="investment-title">1:1000</div>
+                            <div class="investment-desc">rasio leverage maksimal</div>
+                        </div>
+                        <div class="investment-item">
+                            <div class="investment-title">300+</div>
+                            <div class="investment-desc">instrumen trading</div>
+                        </div>
+                        <div class="investment-item">
+                            <div class="investment-title">50%</div>
+                            <div class="investment-desc">bonus</div>
+                        </div>
+                        <div class="investment-item">
+                            <div class="investment-title">Program</div>
+                            <div class="investment-desc">status</div>
+                        </div>
+                        <div class="investment-item">
+                            <div class="investment-title">24/7</div>
+                            <div class="investment-desc">Dukungan Pelanggan dalam bahasa Anda</div>
+                        </div>
+                        <div class="investment-item">
+                            <div class="investment-title">30</div>
+                            <div class="investment-desc">pasangan mata uang digital untuk trading akhir pekan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile App Section -->
+        <section class="mobile-app-section">
+            <div class="container">
+                <div class="mobile-app-content">
+                    <div class="mobile-app-text">
+                        <h2>Trading di mana saja dengan aplikasi Octa Trading</h2>
+                        <p>Nikmati pengalaman trading yang lancar dari perangkat apa pun. Unduh aplikasi kami dan lacak order Anda di kantor, di rumah, atau saat liburan.</p>
+                        <div class="app-download-buttons">
+                            <a href="https://octa-website.onelink.me/tdVk/5j6csa5a?af_js_web=true&af_ss_ver=2_2_0&pid=w2a&af_sub1=0&af_sub2=0&af_sub3=0&af_sub5=0&af_ss_ui=true&af_sub4=0b00c66a-5da8-4c4b-844d-156ca403a32d" class="download-btn">
+                                <img src="https://octacdn.net/assets/img/main-page-redesign/gp-app.svg?6ad6c02f6b1b50473877f344d16c02aa1a3a1ac2" alt="Dapatkan di Google Play">
+                            </a>
+                            <a href="#" class="download-btn">
+                                <img src="https://octacdn.net/assets/img/main-page-redesign/appstore-app.svg?3bfb036e007e7f6d37bc9e8294fe7469debbe241" alt="Unduh di App Store">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-app-image">
+                        <img src="https://octacdn.net/assets/img/main-page-redesign/mobile-app-image-mob.png?d94ef898052f346960ccd75cf41c0936fa8fd085" alt="Mobile App" class="mobile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Mendaftar dan mulai trading</h2>
+                    <p>Buat akun trading gratis dan bergabunglah dengan jutaan trader yang puas dengan layanan kami.</p>
+                    <div class="cta-buttons">
+                        <a href="https://my.octabroker.com/signup/" class="btn-primary">Daftar</a>
+                        <button class="btn-secondary">Nanti</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
