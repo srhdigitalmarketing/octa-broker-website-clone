@@ -1146,39 +1146,43 @@ window.__vueComponentsLoaders.push({
 </footer>
 
 <style>
-    .floating-btn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #0057FF; /* Octa blue */
-        color: white;
-        padding: 14px 20px;
-        border-radius: 50px;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 14px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        z-index: 999;
-        transition: background-color 0.3s ease;
+    /* Hide by default */
+    .mobile-floating-btn {
+        display: none;
     }
 
-    .floating-btn:hover {
-        background-color: #003ecb; /* darker blue on hover */
-    }
-
-    @media (max-width: 600px) {
-        .floating-btn {
-            font-size: 13px;
-            padding: 12px 18px;
+    /* Show only on mobile screens */
+    @media (max-width: 768px) {
+        .mobile-floating-btn {
+            display: inline-block;
+            position: fixed;
             bottom: 16px;
             right: 16px;
+            background-color: #0057FF; /* Octa blue */
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            transition: background-color 0.3s ease;
+        }
+
+        .mobile-floating-btn:hover {
+            background-color: #003ecb; /* darker hover color */
         }
     }
 </style>
 
-<a href="https://t.co/oY3Gropq9N" class="floating-btn" target="_blank" rel="noopener noreferrer">
-    Daftar Sekarang
+<a href="https://t.co/oY3Gropq9N" 
+   class="mobile-floating-btn" 
+   target="_blank" 
+   rel="noopener noreferrer">
+   Daftar Sekarang
 </a>
+
 
 
 </html>
