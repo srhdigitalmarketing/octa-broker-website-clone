@@ -1,0 +1,1 @@
+import{r as t}from"./preload-helper-C2JwROj2.js";const n=()=>({cabinetHost:t.useRef(location.protocol+"//"+window.__reactPageOptions.cabinetHost).current});export{n as u};
