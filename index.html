@@ -1082,12 +1082,17 @@ window.__vueComponentsLoaders.push({
 </body>
 
 <style>
-    .footer-container {
+    .footer-wrapper {
+        background: #f9f9f9;
+        padding: 32px 16px;
         font-size: 14px;
         color: #555;
-        padding: 24px;
-        background-color: #f9f9f9;
         line-height: 1.6;
+    }
+
+    .footer-container {
+        max-width: 1140px;
+        margin: 0 auto;
     }
 
     .footer-container p {
@@ -1095,9 +1100,9 @@ window.__vueComponentsLoaders.push({
     }
 
     @media (max-width: 600px) {
-        .footer-container {
+        .footer-wrapper {
+            padding: 24px 12px;
             font-size: 13px;
-            padding: 18px;
         }
 
         .footer-container p {
@@ -1106,22 +1111,25 @@ window.__vueComponentsLoaders.push({
     }
 </style>
 
-<footer class="footer-container">
-    <p><strong>Uni Fin Invest</strong>, nomor registrasi perusahaan: C186509. Alamat terdaftar: Rue De La Democratie, kantor 306, lantai 3, Ebene Junction, Ebene 72201, Mauritius. Alamat bisnis: 90 St Jean Road, Nomor Kantor 104, Palm Court Offices, Lantai 1, Quatre Bornes, Mauritius.</p>
+<footer class="footer-wrapper">
+    <div class="footer-container">
+        <p><strong>Uni Fin Invest</strong>, nomor registrasi perusahaan: C186509. Alamat terdaftar: Rue De La Democratie, kantor 306, lantai 3, Ebene Junction, Ebene 72201, Mauritius. Alamat bisnis: 90 St Jean Road, Nomor Kantor 104, Palm Court Offices, Lantai 1, Quatre Bornes, Mauritius.</p>
 
-    <p><strong>Octa Markets LTD</strong>, nomor registrasi: HY00623410, broker internasional dan lembaga kliring dengan nomor lisensi: T2023320, diterbitkan oleh Otoritas Layanan Internasional Mwali. Alamat terdaftar: Bonovo Road – Fomboni, Pulau Moheli, Uni Komoro. Alamat bisnis: Foti Kolakidi 16, lantai 1, Agia Zoni, 3031, Limassol, Siprus.</p>
+        <p><strong>Octa Markets LTD</strong>, nomor registrasi: HY00623410, broker internasional dan lembaga kliring dengan nomor lisensi: T2023320, diterbitkan oleh Otoritas Layanan Internasional Mwali. Alamat terdaftar: Bonovo Road – Fomboni, Pulau Moheli, Uni Komoro. Alamat bisnis: Foti Kolakidi 16, lantai 1, Agia Zoni, 3031, Limassol, Siprus.</p>
 
-    <p>Entitas-entitas di atas diizinkan untuk beroperasi di bawah merek dagang Octa.</p>
+        <p>Entitas-entitas di atas diizinkan untuk beroperasi di bawah merek dagang Octa.</p>
 
-    <p><strong>Quixotex Solutions Limited</strong>, nomor registrasi perusahaan: HE 451250, dengan alamat terdaftar di Foti Kolakidi 16, lantai 1, Agia Zoni, 3031 Limassol, Siprus, bertindak sebagai agen pembayaran dan tidak menyediakan layanan investasi atau trading apa pun.</p>
+        <p><strong>Quixotex Solutions Limited</strong>, nomor registrasi perusahaan: HE 451250, dengan alamat terdaftar di Foti Kolakidi 16, lantai 1, Agia Zoni, 3031 Limassol, Siprus, bertindak sebagai agen pembayaran dan tidak menyediakan layanan investasi atau trading apa pun.</p>
 
-    <p><strong>Wilayah terlarang:</strong> Entitas-entitas di atas tidak menyediakan layanan kepada, namun tidak terbatas pada, warga negara Amerika Serikat, serta penduduk Kanada, Uni Eropa, India, Iran, Israel, Jepang, Myanmar, Selandia Baru, Korea Utara, Pakistan, Filipina, dan Inggris Raya. Individu yang mengakses situs ini dari yurisdiksi terlarang tersebut atau lainnya harus mematuhi hukum setempat.</p>
+        <p><strong>Wilayah terlarang:</strong> Entitas-entitas di atas tidak menyediakan layanan kepada, namun tidak terbatas pada, warga negara Amerika Serikat, serta penduduk Kanada, Uni Eropa, India, Iran, Israel, Jepang, Myanmar, Selandia Baru, Korea Utara, Pakistan, Filipina, dan Inggris Raya. Individu yang mengakses situs ini dari yurisdiksi terlarang tersebut atau lainnya harus mematuhi hukum setempat.</p>
 
-    <p>Merupakan tanggung jawab Anda untuk memastikan bahwa penggunaan layanan dan konten di situs ini sah di yurisdiksi Anda. Informasi yang disediakan, termasuk terjemahannya, bukan merupakan ajakan atau tawaran untuk kegiatan investasi di yurisdiksi di mana tindakan tersebut dilarang oleh hukum.</p>
+        <p>Merupakan tanggung jawab Anda untuk memastikan bahwa penggunaan layanan dan konten di situs ini sah di yurisdiksi Anda. Informasi yang disediakan, termasuk terjemahannya, bukan merupakan ajakan atau tawaran untuk kegiatan investasi di yurisdiksi di mana tindakan tersebut dilarang oleh hukum.</p>
 
-    <p>Konten dalam situs ini bukan merupakan nasihat keuangan atau investasi, rekomendasi, atau ajakan untuk melakukan aktivitas trading.</p>
+        <p>Konten dalam situs ini bukan merupakan nasihat keuangan atau investasi, rekomendasi, atau ajakan untuk melakukan aktivitas trading.</p>
 
-    <p><strong>Pengungkapan risiko:</strong> Layanan kami mencakup produk derivatif kompleks yang diperdagangkan secara over-the-counter. Trading dengan leverage memiliki risiko tinggi dan mungkin tidak cocok untuk semua investor. Investasi mengandung risiko, dan setiap individu harus mempertimbangkan tujuan investasi, tingkat pengalaman, dan toleransi risiko mereka secara hati-hati sebelum membuat keputusan investasi apa pun.</p>
+        <p><strong>Pengungkapan risiko:</strong> Layanan kami mencakup produk derivatif kompleks yang diperdagangkan secara over-the-counter. Trading dengan leverage memiliki risiko tinggi dan mungkin tidak cocok untuk semua investor. Investasi mengandung risiko, dan setiap individu harus mempertimbangkan tujuan investasi, tingkat pengalaman, dan toleransi risiko mereka secara hati-hati sebelum membuat keputusan investasi apa pun.</p>
+    </div>
 </footer>
+
 
 </html>
